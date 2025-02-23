@@ -2,9 +2,10 @@
   "name": "Lptr",
   "private": true,
   "workspaces": ["apps/*"],
-  "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build"
+"scripts": {
+    "dev": "node start.js",
+    "dev:backend": "turbo run dev --filter=backend",
+    "dev:frontend": "wait-on http://localhost:3002 && turbo run dev --filter=frontend"
   },
   "devDependencies": {
     "turbo": "^1.10.12"
