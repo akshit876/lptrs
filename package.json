@@ -1,0 +1,12 @@
+{
+  "name": "Lptr",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.12"
+  }
+}
